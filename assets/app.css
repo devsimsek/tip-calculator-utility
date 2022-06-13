@@ -1,0 +1,69 @@
+:root {
+    --bg-primary: #465362;
+    --primary: #ffffff;
+    --bg-dark: #011936;
+}
+
+.card {
+    background: var(--bg-primary) !important;
+    color: var(--primary) !important;
+}
+
+section {
+    color: var(--primary) !important;
+}
+
+input {
+    background: var(--bg-primary) !important;
+    color: var(--primary) !important;
+}
+
+.nav {
+    background: var(--bg-primary) !important;
+    color: var(--primary) !important;
+}
+
+body {
+    background: var(--bg-primary) !important;
+    color: var(--primary) !important;
+}
+
+.btn {
+    color: var(--primary) !important;
+}
+
+.btn:hover {
+    color: black !important;
+}
+
+.dark-mode {
+    background: var(--bg-dark) !important;
+    color: var(--bg-primary) !important;
+}
+
+.dark-mode .card {
+    background: var(--bg-dark) !important;
+    color: var(--primary) !important;
+}
+
+.dark-mode section {
+    color: var(--primary) !important;
+}
+
+.dark-mode input {
+    background: var(--bg-dark) !important;
+    color: var(--primary) !important;
+}
+
+.dark-mode .nav {
+    background: var(--bg-dark) !important;
+    color: var(--primary) !important;
+}
+
+.dark-mode .btn {
+    color: var(--primary) !important;
+}
+
+.dark-mode .btn:hover {
+    color: black !important;
+}

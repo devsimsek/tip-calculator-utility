@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bahşiş Hesaplama Aracı | 15 minute project</title>
+    <link rel="stylesheet" href="/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+
+<main class="container mx-auto m-2 p-2">
+
+    <ul class="nav justify-content-end p-2 m-2 shadow rounded border">
+        <li class="nav-item me-2">
+            <a class="nav-link btn btn-outline-light text-black-50 l_appTitle" aria-current="page"
+               href="https://github.com/devsimsek/tip-calculator-app">Bahşiş Hesaplama
+                Aracı</a>
+        </li>
+        <li class="nav-item me-2">
+            <button id="languageButton" class="nav-link btn btn-outline-light text-black-50">
+                Change Language
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link btn btn-outline-light text-black-50 l_switchTheme" id="themeButton">
+                Tema Değiştir
+            </button>
+        </li>
+    </ul>
+
+    <div class="card m-4 p-4 border rounded shadow">
+        <section class="card-title l_appTitle">
+            Bahşiş hesaplama aracı
+        </section>
+        <section class="card-body">
+            <!-- Bill -->
+            <label for="bill" class="l_bill">Fatura</label>
+            <input class="form-control" type="number" id="bill" name="" placeholder="00.00 TL">
+
+            <br>
+
+            <!-- Tip Percent -->
+            <label for="tip" class="l_tip">Bahşiş (%)</label>
+            <input class="form-control" type="number" id="tip" name="" placeholder="5%" value="5">
+
+            <br>
+
+            <!-- User Count -->
+            <label for="user-count" class="l_user_count">Hesabı Ödeyecek Kişi Sayısı</label>
+            <input class="form-control" type="number" id="user-count" name="" placeholder="1" value="1">
+
+            <br>
+
+            <!-- Results -->
+            <div id="results">
+                <span class="l_tipPerPerson">Kişi Başı Ödenecek Başiş:</span> <span id="tip-per-person"></span>
+                <br>
+                <span class="l_billPerPerson">Kişi Başı Ödenecek Miktar:</span> <span id="bill-per-person"></span>
+            </div>
+        </section>
+        <section class="border-top text-end fst-italic disabled text-black-50">
+            Copyright (C)devsimsek.
+        </section>
+    </div>
+
+</main>
+
+<script src="/assets/bootstrap.bundle.min.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
